@@ -35,12 +35,13 @@
         }
 
         .header p{
-            padding:10px 0px 10px 0px;
+            padding:10px 0px 0px 0px;
             text-align: center;
             color: #dbdbdb;
             font-family: 'Noto Sans JP', sans-serif;
             font-size: 25px;
             line-height: 0px;
+            width: 100%;
         }
 
         .logo{
@@ -48,6 +49,55 @@
             font-size: 40px;
             color: #6495ED;
             font-family: 'Rubik Mono One', sans-serif;
+        }
+
+        .move {
+            user-select: none;
+            text-align: center;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 20px;
+        }
+
+        .move-a{
+            margin-left: 0%;
+        }
+
+        .move-b{
+            margin-left: 25%;
+        }
+
+        .move-c{
+            margin-left: 50%;
+        }
+
+        .move-d{
+            margin-left: 75%;
+        }
+
+        .move p {
+            z-index: 100;
+            position: fixed;
+            top: 71px;
+            cursor: pointer;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            margin-top: -10px;
+            width: 25%;
+            height: 30px;
+            float: left;
+            background-color: #333333;
+            color: #dbdbdb;
+            text-decoration: none;
+            transition: all 0.5s 0s ease;
+        }
+
+        .move p:hover {
+            background-color: #444444;
+        }
+
+        .move a {
+            color: #efedeb;
+            text-decoration: none;
         }
 
         .main{
@@ -59,7 +109,7 @@
 
         .human{
             padding: 0% 25% 0% 25%;
-            padding-top: 100px;
+            padding-top: 125px;
             line-height: 0px;
             height: 200px;
         }
@@ -261,6 +311,13 @@
             <p><span class="logo">F</span>ugu</p>
         </a>
     </div>
+    <div class="move">
+        <p class="move-a"><a href="https://fugufx.github.io/">私について</a></p>
+        <p class="move-b"><a href="">歴史クイズ</a></p>
+        <p class="move-c"><a href="">ジャマイカ</a></p>
+        <p class="move-d"><a href="">電卓</a></p>
+    </div>
+
     <div class="main">
         <div class="human">
             <img src="https://github.com/FuguFX/FuguFX.github.io/blob/main/img/human.png?raw=true">
