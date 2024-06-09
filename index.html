@@ -99,6 +99,24 @@
             padding-bottom: 10vw;
         }
 
+        .button1{
+            padding-top: 5px;
+            padding-bottom: 0px;
+            font-family: "Abril Fatface", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 2.5vw;
+            color: #485942;
+            background-color: #f2f2f200;
+            border: #f2f2f200;
+            transition: all 0.5s 0s ease-in-out;
+        }
+        .button1:hover{
+            cursor: pointer;
+            padding-top: 0px;
+            padding-bottom: 6px;
+        }
+
         .sentence{
             font-family: "Noto Sans JP", sans-serif;
             font-optical-sizing: auto;
@@ -125,12 +143,12 @@
             color: #485942;
         }
 
-        .sentence a{
+        .sentence_a{
             text-decoration: none;
             color: #6e6d6d;
             transition: all 0.5s 0s ease-in-out;
         }
-        .sentence a:hover{
+        .sentence_a:hover{
             color: #1a0dab;
         }
 
@@ -138,7 +156,7 @@
             padding-bottom: 150px;
         }
 
-        .footer {
+        .footer{
             font-family: "Noto Sans JP", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
@@ -207,7 +225,7 @@
                 </a>
                 <br>
                 <a class="sub_icon" href="">
-                    <i class="fa-solid fa-image"></i>
+                    <i class="fa-solid fa-blog"></i>
                 </a>
             </div>
         </div>
@@ -215,16 +233,17 @@
             <div class="header">
                 <img class="lizard" src="https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/tokage.png">
                 <img class="fade" src="https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/fade_white.png">
-                <h1>Fugu</h1>
+                <h1>FUGU</h1>
             </div>
             <div class="content">
-                <h2>-<span class="highlight">Welcome</span>-</h2>
+                <br class="space">
+                <h2 class="welcome">-<span class="highlight">Welcome</span>-</h2>
                 <div class="sentence">
                     <p>　こんにちは！
-                        このウェブサイトは<a href="https://github.com/FuguFX">Fugu</a>によって作られ、まだ製作段階です。</p>
+                        このウェブサイトは<a class="sentence_a" href="https://github.com/FuguFX">Fugu</a>によって作られ、まだ製作段階です。</p>
                 </div>
                 <br class="space">
-                <h2>-<span class="highlight">About Me</span>-</h2>
+                <h2 class="aboutme">-<span class="highlight">About Me</span>-</h2>
                 <div class="sentence">
                     <p>・趣味：写真撮影、プログラミング<br>
                         ・職業：高校生<br>
@@ -233,13 +252,20 @@
                     </p>
                 </div>
                 <br class="space">
-                <h2>-<span class="highlight">Plan</span>-</h2>
+                <h2 class="tool">-<span class="highlight">Tool</span>-</h2>
+                <div class="sentence">
+                    <p>JSで作ったツールを紹介します。</p>
+                </div>
+                <br class="space">
+                <h2 class="plan">-<span class="highlight">Plan</span>-</h2>
                 <div class="sentence">
                     <p>・サイドバーをより高度なものにする<br>
                         ・ツール、写真一覧などのページを作る<br>
                         ・より高品質なサイトにする
                     </p>
                 </div>
+                <br class="space">
+                <button class="button1" id="scrollToTop"><i class="fa-solid fa-chevron-up"></i></button>
                 <br class="space">
             </div>
             <div class="footer">
@@ -252,5 +278,14 @@
             </div>
         </div>
     </div>  
+    <script>
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
