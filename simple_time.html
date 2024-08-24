@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang=jp>
+    <head>
+        <meta charset='UTF-8'>
+        <title>時間変換機</title>
+        <link rel='icon' href='https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/favicon_h.ico'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                width: 100%;
+                margin: 0px;
+                background-color: #f2f2f2;
+            }
+
+            header{
+                float: left;
+                width: 100%;
+                position: fixed;
+                z-index: 100;
+                background-color: #f2f2f275;
+            }
+
+            header h1{
+                float: left;
+                width: 20%;
+                text-align: right;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                padding-top: 12px;
+                font-size: 17px;
+                color: #0d0000;
+            }
+
+            header a{
+                padding-top: 25px;
+                float: left;
+                width: 20%;
+                text-align: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                text-decoration: none;
+                color: #0d0000;
+                transition: all 0.5s 0s ease;
+            }
+            header a:hover{
+                color: #444444;
+            }
+
+            .head{
+                padding-top: 70px;
+                width: 100%;
+                height: auto;
+            }
+            
+            section{
+                margin: 0px auto;
+                display: flex;
+                width: 500px;
+                padding: 20px 0px;
+            }
+
+            .js{
+                margin: 0px auto;
+                width: 500px;
+                padding: 20px 0px;
+            }
+
+            .js h1{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 33px;
+            }
+
+            .js p{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 27px;
+            }
+
+            .js input{
+                border: solid 2px #0d0000;
+                height: 35px;
+            }
+
+            .js select{
+                border: solid 2px #0d0000;
+                height: 40px;
+            }
+
+            .js button{
+                border: solid 2px #0d0000;
+                height: 40px;
+            }
+
+            .text-block{
+                width: 50%;
+                display: inline-block;
+                text-align: left;
+                padding-bottom: 100px;
+            }
+
+            .text-block h1{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 33px;
+                color: #0d0000;
+            }
+
+            .text-block p{
+                padding-left: 10px;
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 27px;
+                color: #0d0000;
+            }
+
+            .text-block span{
+                background-color: #bf264275;
+            }
+
+            .human{
+                display: inline-block;
+                width: 50%;
+                height: 50%;
+            }
+
+            footer{
+                width: 100%;
+                padding: 75px 0px;
+                background-color: #EAE9E4;
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 20px;
+                color: #0d0000;
+            }
+
+            .left{
+                width: 500px;
+                margin: 0px auto;
+                text-align: left;
+            }
+
+            footer p{
+                padding-top: 25px;
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 20px;
+                color: #0d0000;
+                line-height: 0px;
+            }
+
+            .mopemope{
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 16px;
+                color: #0d0000;
+                text-decoration: none;
+                transition: all 0.5s 0s ease;
+            }
+            .mopemope:hover{
+                color: #444444;
+            }
+
+            .icon{
+                text-align: center;
+            }
+
+            .icon i{
+                font-size: 25px;
+                color: #0d0000;
+                transition: all 0.5s 0s ease;
+                text-align: center;
+            }
+            .icon i:hover{
+                color: #444444;
+            }
+
+            footer h1{
+                margin-top: -5px;
+                font-family: "Noto Sans JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 20px;
+                text-align: center;
+                color: #0d0000;
+            }
+        </style>
+        <link href='https://use.fontawesome.com/releases/v6.6.0/css/all.css' rel='stylesheet'> <!--fontawesome-->
+    </head>
+    <body>
+        <header>
+            <h1>haha770</h1>
+            <nav><a href="">AboutMe</a></nav>
+            <nav><a href="">Work</a></nav>
+            <nav><a href="">Game</a></nav>
+            <nav><a href="">Contact</a></nav>
+        </header>
+        <img src="https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/pc_ai.jpg" class="head">
+        <div class="js">
+            <h1>時間変換機</h1>
+            <input type="text" id="number1">
+            <select id="unit1">
+                <option value="ms">ミリ秒</option>
+                <option value="s" selected>秒</option>
+                <option value="m">分</option>
+                <option value="h">時間</option>
+                <option value="d">日</option>
+                <option value="y">年</option>
+            </select>
+            →
+            <select id="unit2">
+                <option value="ms">ミリ秒</option>
+                <option value="s">秒</option>
+                <option value="m" selected>分</option>
+                <option value="h">時間</option>
+                <option value="d">日</option>
+                <option value="y">年</option>
+            </select>
+            <button onclick="convert()">変換</button>
+            <br>
+            <p id="answer">ここに答えが出ます</p>
+            <p>※うるう年は考えていません。半角数字で入力してください。</p>
+        </div>
+        <br>
+        <section>
+            <div class="text-block">
+                <h1>時間変換機とは？</h1>
+                <p>時間の単位をミリ秒、秒、分、時間、日、年で変換できます（？）</p>
+            </div>
+            <img class="human" src="https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/cat.png">
+        </section>
+        <br>
+        <section>
+            <img class="human" src="https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/human3.png">
+            <div class="text-block">
+                <h1>使い方</h1>
+                <p>左の空欄に<span>半角で</span>数字を入力し、単位を選択します。その後"変換"ボタンを押すと下に結果が表示されます。</p>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="text-block">
+                <h1>どんな時に使える？</h1>
+                <p>数学の問題にでも使いましょう！</p>
+            </div>
+            <img class="human" src="https://raw.githubusercontent.com/FuguFX/FuguFX.github.io/main/img/human4.png">
+        </section>
+        <br>
+        <footer>
+            <div class="left">
+                <a class="mopemope" href="">AboutMe</a>
+                <br>
+                <a class="mopemope" href="">Work</a>
+                <br>
+                <a class="mopemope" href="">Game</a>
+                <br>
+                <a class="mopemope" href="">Contact</a>
+                <br>
+                <p>使用した素材</p>
+                <a class="mopemope" href="https://www.shigureni.com/">絵/shigureni</a>
+                <br>
+                <a class="mopemope" href="https://inkscape.org/ja/">画像編集/Inkscape</a>
+                <br>
+                <a class="mopemope" href="https://fonts.google.com/specimen/Montserrat">見出しフォント/Montserrat(GoogleFonts)</a>
+                <br>
+                <a class="mopemope" href="https://fonts.google.com/noto/specimen/Noto+Sans+JP">文章フォント/NotoSansJP(GoogleFonts)</a>
+            </div>
+            <br>
+            <div class="icon">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <h1>haha770</h1>
+        </footer>
+        <script> <!--js-->
+            function halfNumber(str){
+                return /^[0-9]+$/.test(str);
+            }
+
+            function convert(){
+                var inputNumber1 = document.getElementById('number1');
+                console.log(inputNumber1.value);
+                var inputUnit1 = document.getElementById('unit1');
+                console.log(inputUnit1.value);
+                var inputUnit2 = document.getElementById('unit2');
+                console.log(inputUnit2.value);
+
+                if (inputNumber1.value.match(/^[0-9]+$/)) {
+                    console.log("半角数字");
+
+                    inputNumber1 = Number(inputNumber1.value)
+                    var msecond = 1;
+                    var unitJapanese1 = "秒";
+                    if (inputUnit1.value=="ms"){
+                        msecond = inputNumber1 * 1;
+                        unitJapanese1 = "ミリ秒";
+                    } else if (inputUnit1.value=="s"){
+                        msecond = inputNumber1 * 1000;
+                        unitJapanese1 = "秒";
+                    } else if (inputUnit1.value=="m"){
+                        msecond = inputNumber1 * 60000;
+                        unitJapanese1 = "分";
+                    } else if (inputUnit1.value=="h"){
+                        msecond = inputNumber1 * 3600000;
+                        unitJapanese1 = "時間";
+                    } else if (inputUnit1.value=="d"){
+                        msecond = inputNumber1 * 86400000;
+                        unitJapanese1 = "日";
+                    } else if (inputUnit1.value=="y"){
+                        msecond = inputNumber1 * 31536000000;
+                        unitJapanese1 = "年";
+                    }
+                    console.log(msecond + "ミリ秒")
+
+                    var answer = 1;
+                    var unitJapanese2 = "秒";
+                    if (inputUnit2.value=="ms"){
+                        answer = msecond * 1;
+                        unitJapanese2 = "ミリ秒";
+                    } else if (inputUnit2.value=="s"){
+                        answer = msecond / 1000;
+                        unitJapanese2 = "秒";
+                    } else if (inputUnit2.value=="m"){
+                        answer = msecond / 60000;
+                        unitJapanese2 = "分";
+                    } else if (inputUnit2.value=="h"){
+                        answer = msecond / 3600000;
+                        unitJapanese2 = "時間";
+                    } else if (inputUnit2.value=="d"){
+                        answer = msecond / 86400000;
+                        unitJapanese2 = "日";
+                    } else if (inputUnit2.value=="y"){
+                        answer = msecond / 31536000000;
+                        unitJapanese2 = "年";
+                    }
+                    console.log(answer + unitJapanese2)
+                    document.getElementById("answer").textContent = inputNumber1 + unitJapanese1 + "は" + answer + unitJapanese2 + "です";
+                }else{
+                    console.log("NOT半角数字");
+                    alert("半角数字で入力してください");
+                }
+            }
+        </script>
+    </body>
+</html>
