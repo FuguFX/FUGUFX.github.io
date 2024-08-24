@@ -3,23 +3,33 @@
 ## 概要
 ・デザインを一新しました。
 
-・現在製作途中です。
+・現在ホームと時間変換機（Work）があります。
 
 ## 特徴
-・今までとは異なるデザインにしました。
+・結構シンプルなデザイン
 
 ・パソコンでもスマホでも見れます。
 
 ## 使い方
-・ページは[こちら](https://fugufx.github.io/)からアクセスできます。
-
-## 注意事項
-・ウェブサイトにトカゲの写真が使われています。トカゲが苦手な人はご注意ください。
+・ページは[こちら](https://fugufx.github.io/simple_home.html)からアクセスできます。
 
 ## 他のサービス（追加予定）
-・JavaScriptを使ったツール
+・Game欄
 
-・写真
+・Contact欄
 
-## お願い
-・バグ、不具合、アドバイス等ありましたら[こちら](https://github.com/FuguFX/Comments/issues/1)で私に教えてくださると嬉しいです。
+・Worksを増やす
+
+## 参考
+・[Mr.CHEESECAKE](https://mr-cheesecake.com/)のウェブサイト
+
+## 使用素材
+・pcの絵/[Microsoft Designer](https://designer.microsoft.com/)
+
+・絵/[shigureni](https://www.shigureni.com/)
+
+・画像編集/[Inkscape](https://inkscape.org/ja/)
+
+・見出しフォント/[Montserrat（Googlefonts）](https://fonts.google.com/specimen/Montserrat)
+
+・文章フォント/[NotoSansJP（Googlefonts）](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
