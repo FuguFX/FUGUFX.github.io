@@ -3,7 +3,7 @@
 ## 概要
 ・デザインを一新しました。
 
-・現在ホームと時間変換機（Work）があります。
+・現在ホーム、ツール（時間変換機）、ブログ（メニューのみ）が実装されています。
 
 ## 特徴
 ・結構シンプルなデザイン
@@ -14,11 +14,11 @@
 ・ページは[こちら](https://fugufx.github.io/simple_home.html)からアクセスできます。
 
 ## 他のサービス（追加予定）
-・Game欄
+・ちょっとしたBlogを作る
 
 ・Contact欄
 
-・Worksを増やす
+・Toolを増やす
 
 ## 参考
 ・[Mr.CHEESECAKE](https://mr-cheesecake.com/)のウェブサイト
@@ -33,3 +33,5 @@
 ・見出しフォント/[Montserrat（Googlefonts）](https://fonts.google.com/specimen/Montserrat)
 
 ・文章フォント/[NotoSansJP（Googlefonts）](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
+
+・アイコン/[Font Awesome](https://fugufx.github.io/simple_blog.html)
